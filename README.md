@@ -19,7 +19,7 @@ Looking at the data we can see that the majority of the satellites launched for 
 <br>
 <img src="img/orbits.png" width=40% height=30%/>
 <br>
-There is a very clear distinction between the average life expectancy of a satellite and the orbit. Comparing this graph with the previous one we can start to understand why the average expected life expectancy dropped so drastically for the 2020's.
+There is a very clear distinction between the average life expectancy of a satellite and the orbit. Comparing this graph with the previous one we can start to understand why the average expected life expectancy dropped so drastically for the 2020's. From previous knowledge I know the reason why the average life expectancy for satelittes decreases as the orbit is closer to Earth is due to the fact that the Earth's gravitational pull being stronger with the closer the object is to Earth. This translates to satellites having to expend more propellant in order to maintain its orbit and once the propellant has been used up, the satellite can no longer manuever and either reenters Earth's atmoshpere or in the case of GEO satellites, sent to the graveyard.
 <br>
 <img src="img/mean_orbit.png" width=40% height=30%/>
 <br>
@@ -27,15 +27,13 @@ Reviewing the change in life expectancy for each decade for each orbit there is 
 <br>
 <img src="img/mean_orbit_decade.png" width=40% height=30%/>
 <br>
-
-But as every realtor will tell you, the most important thing about a property is location, location, location. Now that we have identified the most common type of property along with the district we can start looking at the cost of these properties and break down where the value of these properties are coming from. First looking at the average cost of each type of property per district we can get a rough idea of the value of the location. By viewing these averages with our previous total value graph, we are able to get a more clear picture of the prices available of each property type per area.
+Looking at this graph with the majority of the satellites have been from SpaceX and doing research outside of the data provided, a majority of SpaceX's launches have been smallsats for their Starlink Costellation: a communication constellation providing broadband internet across the globe. These smallsats are designed to have multiple satellites stored onto a single launch vehicle. This smaller size could mean there is less room for propellant but further outside research would have to be done.
 <br>
 <img src="img/operators.png" width=40% height=30%/>
 <br>
 
 ## Conclusion
-It is quite clear that the most common type of within this data are some type of home with single family homes being by far the most common. Looking at the districts we can see that the majority of properties are located in the Urban District and the General Services District having the vast majority of the properties within them. Looking at the costs of each property we could have a bit of skewed data due to the low the amount of data points in some of the property types but a pretty clear view that in most cases the value of a property comes from the building with some exceptions. Finally looking at the difference between the sale price and the total value of the home we can get an idea of how much these properties are being sold for and whether the property type increases or decreases with value. Finally we can view the general location of each property by tax district and see the average value of each property type within its district and see where the most and least expensive properties on average can be found.
+From the data we can see the life expectancy of satellites has drastically dropped since the 2000's. This is due in part to the massive amount of LEO satellites launched in the 2020's. With LEO satellites having a lower life expectancy, these launches absolutely tanked the overall average life expectancy but if the life expectancies were broken down by orbit, there was actually an increase in life expectancy for satellites in MEO and GEO. Doing outside research it was found that the reason why the LEO satellite life expectancy went down was due to the useage of smallsats which allow for multiple satellites to be housed in a launch vehicle but have a lower life expectancy than regular satellites. With this knowledge, an assumption can be made that the life expectancy of satelittes in GEO and LEO has increased while LEO went down due to the massive use of smallsats.
 
-
-##  Future Project Plans
-Ways I can improve on this project in the future is by finding more data on the other property types to have a better breakdown of all property values and make sure I have better averages. I can also find a map of the tax districts in order to show where these locations are and maybe see why some of the price averages are higher than others. A big improvement that could be made is consolidating the code in order to improve reusability as even with the little code I was able to refactor into functions were made much more flexible and could be implemented in later projects.
+## Possible Future Data Exploration
+With seeing the development of smallsats it would be interesting to see the change in the cost of satellites and if there is any correlation between the cost and life expectancy. While looking at outside research, I saw some sources rasing concern over the smallsats and the increase in the likelyhood of a collision. Looking at a datset of the number of collisions or close calls could be beneficial as to see whether this statement is true or not. 
