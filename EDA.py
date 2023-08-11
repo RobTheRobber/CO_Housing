@@ -1,15 +1,28 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-import sys
+import statsmodels.api as sm
+from EDA import create_boxplot,test_pairs, remove_small_groupings, map_values, one_sample, cross_val_size
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
-from itertools import combinations 
+from sklearn.model_selection import KFold
+from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-import scipy.stats as stats
-import math
-import pandas as pd
+from pandas.plotting import scatter_matrix
+from pandas.plotting import boxplot
 import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import learning_curve
+from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.linear_model import LogisticRegression
+import scipy.stats as stats
+from scipy.stats import f_oneway
+from scipy.stats import sem
+from sklearn.model_selection import cross_val_score
+from scipy.stats import ttest_1samp
+from itertools import combinations
 pd.set_option('display.float_format', lambda x: '%.2f' % x)
 pd.options.mode.chained_assignment = None  # default='warn'
 
